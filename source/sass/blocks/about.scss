@@ -47,9 +47,9 @@
         &__container{
             display: grid;
             grid-template-rows: 1fr 1fr 1fr;
-            gap: 20px 73px;
+            gap: 36px 73px;
             grid-template-columns: 262px 302px;
-            margin-bottom: 49px;
+            margin-bottom: 66px;
         }
         &__description{
             font-size: 20px;
@@ -99,7 +99,7 @@
         &__container{
             gap: 5px 97px;
             grid-template-columns: 249px 317px;
-            margin-bottom: 23px;
+            margin-bottom: 32px;
         }
         &__wrapper{
             &-clew{

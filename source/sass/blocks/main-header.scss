@@ -1,5 +1,6 @@
 .main-header{
     position: relative;
+    margin-top: 9px;
     &__logo{
         &-main{
             width: 85.97px;
@@ -15,6 +16,12 @@
             display: none;
             width: 149px;
             height: 72px;
+        }
+        &:hover{
+            opacity: .6;
+        }
+        &:active{
+            opacity: .3;
         }
     }
     &__title{
@@ -69,6 +76,12 @@
         &.content-toys{
             background-color: #56C3B2;
         }
+        &:hover.content-interior{
+            background-color: #59D5BC;
+        }
+        &:hover.content-toys{
+            background-color: #46C1AE;
+        }
     }
     &__container{
         display: flex;
@@ -111,7 +124,7 @@
                 &::after{
                     position: absolute;
                     content: "";
-                    background-image: url(../../img/waves.svg);
+                    background-image: url(../img/waves.svg);
                     min-width: 768px;
                     height: 23px;
                     bottom: -14px;
@@ -134,7 +147,7 @@
             &::after{
                 position: absolute;
                 content: "";
-                background-image: url(../../img/waves.svg);
+                background-image: url(../img/waves.svg);
                 min-width: 768px;
                 height: 23px;
                 bottom: 0;
@@ -190,19 +203,18 @@
             }
             &-desktop{
                 display: block;
-                margin: -12px 0 21px 35px;
+                margin: -12px 0 6px 35px;
             }
         }
         &__title{
             font-size: 53px;
             padding: 165px 116px 24px;
             &-catalog{
-                margin-top: -17px;
                 padding-top: 107px;
                 padding-bottom: 94px;
                 font-size: 53px;
                 &::after{
-                    background-image: url(../../img/wave-desktop.svg);
+                    background-image: url(../img/wave-desktop.svg);
                     min-width: 1150px;
                     bottom: -9px;
                 }
@@ -215,14 +227,14 @@
         }
         &__container{
             padding-bottom: 0;
-            margin-bottom: -21px;
+            margin-bottom: -1px;
         }
         &__subtitle{
             padding: 66px 218px 20px 226px;
         }
         &__wrapper{
             &::after{
-                background-image: url(../../img/wave-desktop-main.svg);
+                background-image: url(../img/wave-desktop-main.svg);
                 width: 1150px;
                 bottom: -4px;
             }

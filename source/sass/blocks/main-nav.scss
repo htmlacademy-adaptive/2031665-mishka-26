@@ -1,10 +1,15 @@
 .main-nav{
     padding-right: 18px;
-    &--opened {
+    &--opened{
         & .main-nav__wrapper{
             display: none;
         }
         & .button-opened{
+            display: block;
+        }
+    }
+    &--nojs{
+        &:focus-within .main-nav__wrapper{
             display: block;
         }
     }
@@ -36,6 +41,14 @@
         padding: 0;
         cursor: pointer;
         margin: 6px -3px 0 0;
+        &-js{
+        &:focus .button-closed{
+            display: block;
+        }
+        &:focus .button-opened{
+            display: none;
+        }
+        }
     }
     &__list{
         padding: 0;
@@ -59,12 +72,12 @@
             a:focus{
                 display: block;
             }
+            & svg{
+                opacity: 0.2;
+            }
             &:hover svg{
                 fill: #63D1BB;
                 opacity: 1;
-            }
-            &:active svg{
-                opacity: .3;
             }
             &-delivery{
                 display: none;
@@ -80,9 +93,8 @@
     &__icon{
         margin-left: -44px;
         margin-right: 22px;
-        opacity: 0.2;
-        width: 18px;
-        height: 18px;
+        width: 20px;
+        height: 20px;
     }
     &__wrapper{
         display: none;

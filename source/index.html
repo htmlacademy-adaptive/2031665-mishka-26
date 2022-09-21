@@ -5,11 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/152.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
-  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -28,7 +27,7 @@
           </svg>
         </a>
         <nav class="main-nav main-nav--nojs main-nav--opened">
-          <button class="main-nav__toggle" type="button">
+          <button class="main-nav__toggle main-nav__toggle-js" type="button">
             <svg class="button-opened">
               <use xlink:href="img/sprite.svg#menu-closed"></use>
             </svg>
@@ -287,7 +286,7 @@
           <li class="footer__social-icons-wrapper">
             <a class="social-icons-svg" href="https://www.youtube.com/">
               <svg>
-                <use xlink:href="img/sprite.svg#youtube"></use>
+                <use fill="#63D1BB" xlink:href="img/sprite.svg#youtube"></use>
               </svg>
             </a>
           </li>
@@ -310,5 +309,4 @@
   </div>
   <script src="js/script.js"></script>
 </body>
-
 </html>

@@ -70,8 +70,11 @@
                 margin-bottom: 23px;
                 fill: #fff;
                 stroke: #000;
-                & .path{
-                    fill: #000;
+                & use.ic-1{
+                    stroke-width: 1.5;
+                }
+                & use.ic-2{
+                    stroke-width: 1.5;
                 }
                 &:hover use.ic-1{
                     stroke: #62D1BA;
@@ -193,6 +196,7 @@
         &-textarea{
             &-list{
                 margin: 0;
+                margin-bottom: -7px;
             }
             &-box{
                 height: 106px;
@@ -219,8 +223,9 @@
             &-note{
                 margin: 0;
                 font-size: 14px;
-                padding-left: 2px;
+                padding-left: 16px;
                 color: #444444;
+                margin-bottom: 10px;
             }
         }
     }
@@ -329,7 +334,7 @@
                             width: 20px;
                             height: 20px;
                             top: 14px;
-                            left: 16px;
+                            left: 14px;
                         }
                     }
                     &-label{
