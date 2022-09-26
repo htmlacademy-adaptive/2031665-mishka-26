@@ -1,26 +1,30 @@
-.arrows{
-    background: #FFFFFF;
-    padding: 9px 41px;
-    margin: 0;
-    margin-right: -9px;
-    border: 1px solid #ECECEC;
-    cursor: pointer;
-    &:hover{
-        opacity: 0.6;
-    }
-    &:active{
-        opacity: 0.3;
-    }
-    & svg{
-        width: 50px;
-        height: 26px;
-    }
+.arrows {
+  background: #ffffff;
+  padding: 9px 41px;
+  margin: 0;
+  margin-right: -9px;
+  border: 1px solid #ececec;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
+.arrows svg {
+  width: 50px;
+  height: 26px;
+}
+
+
 @media (min-width: 768px) {
-    .arrows{
-        border: none;
-        margin-right: 18px;
-        padding: 16px 9px;
-    }
+  .arrows {
+    border: none;
+    margin-right: 18px;
+    padding: 16px 9px;
+  }
 }

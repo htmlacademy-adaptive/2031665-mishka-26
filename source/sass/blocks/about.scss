@@ -1,110 +1,138 @@
-.about{
-    padding: 20px 39px 21px 32px;
-    &__title{
-        margin-bottom: 27px;
-    }
-    &__wrapper{
-        font-size: 13px;
-        line-height: 20px;
-        margin-bottom: 36px;
-    }
-    &__image{
-        margin-left: 10px;
-        &-flower{
-            margin-left: 10px;
-        }
-        &-money{
-            margin: -7px 0 9px 1px;
-        }
-        &-heart{
-            margin-top: -3px;
-            margin-left: 8px;
-        }
-        &-yarn{
-            margin-left: 4px;
-            margin-top: -2px;
-        }
-        &-support{
-            margin: -4px 0 8px -4px;
-        }
-        &-gift{
-            margin: -4px 0 2px 4px;
-        }
-    }
-    &__description{
-        margin: 14px 0 29px -1px;
-        font-size: 15px;
-    }
+.about {
+  padding: 20px 39px 21px 32px;
+}
+
+.about__title {
+  margin-bottom: 27px;
+  margin-top: 32px;
+}
+
+.about__wrapper {
+  font-size: 13px;
+  line-height: 20px;
+  margin-bottom: 36px;
+}
+
+.about__image {
+  margin-left: 10px;
+}
+
+.about__image-flower {
+  margin-left: 10px;
+}
+
+.about__image-money {
+  margin: -7px 0 9px 1px;
+}
+
+.about__image-heart {
+  margin-top: -3px;
+  margin-left: 8px;
+}
+
+.about__image-yarn {
+  margin-left: 4px;
+  margin-top: -2px;
+}
+
+.about__image-support {
+  margin: -4px 0 8px -4px;
+}
+
+.about__image-gift {
+  margin: -4px 0 2px 4px;
+}
+
+.about__description {
+  margin: 14px 0 29px -1px;
+  font-size: 15px;
 }
 
 @media (min-width: 768px) {
-    .about{
-        padding: 18px 60px 27px 50px;
-        &__title{
-            font-size: 43px;
-            margin-bottom: 52px;
-        }
-        &__container{
-            display: grid;
-            grid-template-rows: 1fr 1fr 1fr;
-            gap: 36px 73px;
-            grid-template-columns: 262px 302px;
-            margin-bottom: 66px;
-        }
-        &__description{
-            font-size: 20px;
-            margin: 14px 0 13px -1px;
-        }
-        &__wrapper{
-            margin-bottom: 14px;
-            &-eco{
-                order: 1;
-            }
-            &-money{
-                order: 3;
-            }
-            &-like{
-                order:5;
-            }
-            &-clew{
-                order: 2;
-            }
-            &-manufacture{
-                order: 4;
-            }
-            &-present{
-                order: 6;
-            }
-        }
-        &__image{
-            &-yarn{
-                margin-top: 4px;
-            }
-            &-support{
-                margin: -4px 0 13px -4px;
-            }
-            &-gift{
-                margin: -4px 0 0px 4px;
-            }
-        }
-    }
+  .about {
+    padding: 23px 54px 27px 50px;
+  }
+
+  .about__title {
+    font-size: 43px;
+    margin-bottom: 52px;
+  }
+
+  .about__container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 35px 97px;
+    grid-template-columns: 239px 302px;
+    margin-bottom: 66px;
+  }
+
+  .about__description {
+    font-size: 20px;
+    margin: 14px 0 13px -1px;
+  }
+
+  .about__wrapper {
+    margin-bottom: 14px;
+  }
+
+  .about__wrapper-eco {
+    order: 1;
+  }
+
+  .about__wrapper-money {
+    order: 3;
+  }
+
+  .about__wrapper-like {
+    order: 5;
+  }
+
+  .about__wrapper-clew {
+    order: 2;
+  }
+
+  .about__wrapper-manufacture {
+    order: 4;
+  }
+
+  .about__wrapper-present {
+    order: 6;
+  }
+
+  .about__image-yarn {
+    margin-top: 4px;
+  }
+
+  .about__image-support {
+    margin: -4px 0 13px -4px;
+  }
+
+  .about__image-gift {
+    margin: -4px 0 0 4px;
+  }
 }
 
 @media (min-width: 1150px) {
-    .about{
-        padding: 0px 151px 0 225px;
-        &__title{
-            font-size: 53px;
-        }
-        &__container{
-            gap: 5px 97px;
-            grid-template-columns: 249px 317px;
-            margin-bottom: 32px;
-        }
-        &__wrapper{
-            &-clew{
-                margin-bottom: 41px;
-            }
-        }
-    }
+  .about {
+    padding: 0 151px 0 225px;
+  }
+
+  .about__title {
+    font-size: 53px;
+    margin-top: 47px;
+  }
+
+  .about__container {
+    gap: 10px 109px;
+    grid-template-columns: 242px 304px;
+    margin-bottom: 20px;
+  }
+
+  .about__wrapper-clew {
+    margin-bottom: 41px;
+  }
+
+  .about__description {
+    font-size: 18px;
+  }
 }

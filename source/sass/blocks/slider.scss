@@ -1,134 +1,160 @@
-.slider{
-    padding: 0 30px 69px;
-    &__header{
-        grid-column: 1/2;
-        grid-row: 1;
-        overflow: hidden;
-    }
-    &-picture{
-        display: none;
-    }
-    &__button{
-        padding: 14px 78px;
-    }
-    &__title-review{
-        font-size: 25px;
-        margin: 0 0 14px 0;
-    }
-    &__subtitle-review{
-        font-size: 14px;
-        overflow: hidden;
-        margin-bottom: 65px;
-    }
-    &__autor{
-        font-weight: 700;
-        line-height: 24px;
-        &-name{
-            margin: 33px 0 7px 3px;
-            font-size: 15px;
-        }
-        &-instagram{
-            font-size: 14px;
-            margin: 0 0 32px 2px;
-        }
-    }
-    &__arrows{
-        margin-bottom: 39px;
-    }
+.slider {
+  padding: 0 30px 78px;
+}
+
+.slider__header {
+  grid-column: 1/2;
+  grid-row: 1;
+  overflow: hidden;
+}
+
+.slider-picture {
+  display: none;
+}
+
+.slider__button {
+  padding: 12px 78px;
+}
+
+.slider__title-review {
+  font-size: 25px;
+  margin: 0 0 14px 0;
+}
+
+.slider__subtitle-review {
+  font-size: 15px;
+  overflow: hidden;
+  margin-bottom: 32px;
+}
+
+.slider__autor {
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.slider__autor-name {
+  margin: 33px 0 7px 3px;
+  font-size: 17px;
+}
+
+.slider__autor-instagram {
+  font-size: 14px;
+  margin: 0 0 32px 2px;
+}
+
+.slider__arrows {
+  margin-bottom: 51px;
 }
 
 @media (min-width: 768px) {
-    .slider{
-        padding: 38px 40px 101px 49px;
-        display: grid;
-        grid-template-rows: 52px 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        position: relative;
-        &-picture{
-            display: block;
-            position: absolute;
-            z-index: -3;
-            top: -47px;
-        }
-        &::after{
-            content: "";
-            background-image: url(../../img/wave-gray.svg);
-            background-repeat: no-repeat;
-            bottom: 0;
-            width: 768px;
-            height: 30px;
-            left: 0;
-            position: absolute;
-        }
-        &__header{
-            order: 1;
-            grid-column: 1/3;
-            grid-row: 1;
-        }
-        &__title{
-            &-review{
-                font-size: 43px;
-                line-height: 50px;
-                margin-bottom: 40px;
-            }
-        }
-        &__subtitle{
-            &-review{
-                font-size: 17px;
-                line-height: 30px;
-                margin-bottom: 60px;
-                order: 3;
-                grid-column: 1/5;
-                margin-top: 35px;
-            }
-        }
-        &__container{
-            order: 4;
-            grid-column: 1/5;
-            display: flex;
-            justify-content: space-between;
-        }
-        &__button{
-            order: 2;
-            grid-column: 4;
-            padding: 14px 36px;
-            margin: -7px 9px 7px 1px;
-        }
-        &__autor{
-            &-name{
-                margin: 0px 0 7px 3px;
-                font-size: 18px;
-            }
-        }
+  .slider {
+    padding: 38px 40px 101px 49px;
+    display: grid;
+    grid-template-rows: 52px 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    position: relative;
+
+    &::after {
+      content: "";
+      background-image: url("../../img/wave-gray.svg");
+      background-repeat: no-repeat;
+      bottom: 0;
+      width: 768px;
+      height: 30px;
+      left: 0;
+      position: absolute;
     }
+  }
+
+  .slider-picture {
+    display: block;
+    position: absolute;
+    z-index: -3;
+    top: -47px;
+  }
+
+  .slider__header {
+    order: 1;
+    grid-column: 1/3;
+    grid-row: 1;
+  }
+
+  .slider__title-review {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 40px;
+  }
+
+  .slider__subtitle-review {
+    line-height: 30px;
+    margin-bottom: 60px;
+    order: 3;
+    padding-right: 20px;
+    grid-column: 1/5;
+    margin-top: 35px;
+  }
+
+  .slider__container {
+    order: 4;
+    grid-column: 1/5;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .slider__button {
+    order: 2;
+    grid-column: 4;
+    font-size: 16px;
+    padding: 14px 42px;
+    margin: -6px 9px 6px 3px;
+  }
+
+  .slider__autor-name {
+    margin: 0 0 7px 3px;
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 1150px) {
-    .slider{
-        padding: 83px 40px 40px 175px;
-        margin-left: 49px;
-        margin-top: 21px;
-        &__title{
-            &-review{
-                font-size: 53px;
-            }
-        }
-        &__subtitle{
-            &-review{
-                margin-bottom: 47px;
-            }
-        }
-        &__button{
-            padding: 0px 2px;
-            margin: -3px 9px 3px 36px;
-        }
-        &-picture{
-            top: 3px;
-        }
-        &::after{
-            background-image: url(../img/wave-gray-main.svg);
-            width: 1150px;
-            bottom: -108px;
-        }
+  .slider {
+    padding: 83px 40px 40px 175px;
+    margin-left: 49px;
+    margin-top: 21px;
+
+    &::after {
+      background-image: url("../img/wave-gray-main.svg");
+      width: 1150px;
+      bottom: -97px;
     }
+  }
+
+  .slider__autor-name {
+    font-size: 17px;
+  }
+
+  .slider__autor-instagram {
+    font-size: 16px;
+  }
+
+  .slider__title-review {
+    font-size: 53px;
+  }
+
+  .slider__subtitle-review {
+    margin-bottom: 44px;
+    padding-right: 60px;
+    font-size: 14px;
+    margin-top: 37px;
+  }
+
+  .slider__button {
+    margin: -3px 9px 3px 36px;
+    padding: 14px 31px;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .slider-picture {
+    top: 3px;
+  }
 }

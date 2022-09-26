@@ -1,18 +1,18 @@
-.fieldset{
-    border: none;
+.fieldset {
+  border: none;
 }
 
 @media (min-width: 768px) {
-    .fieldset{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        padding: 50px 34px 0px 34px;
-    }
+  .fieldset {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 50px 34px 0 34px;
+  }
 }
 
 @media (min-width: 1150px) {
-    .fieldset{
-        padding: 50px 135px 0px 92px;
-        grid-template-columns: 124px 1fr;
-    }
+  .fieldset {
+    padding: 50px 135px 0 92px;
+    grid-template-columns: 124px 1fr;
+  }
 }

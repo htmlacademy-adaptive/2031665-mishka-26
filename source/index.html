@@ -5,13 +5,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
-  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/152.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+  <link rel="preload" href="fonts/OpenSans-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/OpenSans-Regular.woff" type="font/woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff" type="font/woff" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body class="page__body">
+<body>
   <div class="container">
     <header class="main-header">
       <div class="main-header__container">
@@ -51,18 +55,18 @@
             </ul>
             <ul class="main-nav__list user-list">
               <li class="main-nav__list-item user-list__item main-nav__list-item-invisible">
+                <svg class="main-nav__icon main-nav__icon-search">
+                  <use xlink:href="img/sprite.svg#search"></use>
+                </svg>
                 <a class="main-nav__list-item-search" href="#">
-                  <svg class="main-nav__icon main-nav__icon-search">
-                    <use xlink:href="img/sprite.svg#search"></use>
-                  </svg>
                   Поиск по сайту
                 </a>
               </li>
               <li class="main-nav__list-item user-list__item main-nav__list-item-visible">
+                <svg class="main-nav__icon">
+                  <use xlink:href="img/sprite.svg#basket"></use>
+                </svg>
                 <a href="#">
-                  <svg class="main-nav__icon">
-                    <use xlink:href="img/sprite.svg#basket"></use>
-                  </svg>
                   Корзина: пока пуста
                 </a>
               </li>
@@ -87,16 +91,16 @@
         <h1 class="main-header__title">Милые штуки ручной работы для дома</h1>
         <div class="main-header__inner">
           <div class="main-header__content content-interior">
-            <div class="main-header__content-title">
+            <a href="#" class="main-header__content-title">
               Предметы интерьера
-            </div>
-            <img class="main-header__content-image interior-image" src="img/interior.svg" alt="Лампа.">
+            </a>
+            <img class="main-header__content-image interior-image" src="img/interior.svg" alt="Лампа." width="40" height="62">
           </div>
           <div class="main-header__content content-toys">
-            <div class="main-header__content-title">
+            <a href="#" class="main-header__content-title">
               Детские игрушки
-            </div>
-            <img class="main-header__content-image" src="img/toy-svg.svg" alt="Игрушка кубик.">
+            </a>
+            <img class="main-header__content-image" src="img/toy-svg.svg" alt="Игрушка кубик." width="60" height="60">
           </div>
         </div>
       </div>
@@ -150,7 +154,7 @@
               <div class="product-week__price">
                 Цена: 990 руб.
               </div>
-              <button class="product-week__button button">ЗАКАЗАТЬ</button>
+              <a href="#" class="product-week__button button">ЗАКАЗАТЬ</a>
             </div>
           </div>
         </div>
@@ -161,37 +165,37 @@
         </h2>
         <div class="about__container">
           <div class="about__wrapper about__wrapper-eco">
-            <img src="img/flower.svg" alt="Цветок." class="about__image about__image-flower">
+            <img src="img/flower.svg" alt="Цветок." class="about__image about__image-flower" width="33" height="38">
             <h2 class="about__description">
               Экологически чистые материалы
             </h2>
           </div>
           <div class="about__wrapper about__wrapper-money">
-            <img src="img/money.svg" alt="Деньги." class="about__image about__image-money">
+            <img src="img/money.svg" alt="Деньги." class="about__image about__image-money" width="47" height="27">
             <h2 class="about__description">
               Скандинавский стиль по российской цене
             </h2>
           </div>
           <div class="about__wrapper about__wrapper-like">
-            <img src="img/likes.svg" alt="Сердце." class="about__image about__image-heart">
+            <img src="img/likes.svg" alt="Сердце." class="about__image about__image-heart" width="34" height="27">
             <h2 class="about__description">
               Увеличивает лайки на фотографиях
             </h2>
           </div>
           <div class="about__wrapper about__wrapper-clew">
-            <img src="img/clew.svg" alt="Клубок." class="about__image about__image-yarn">
+            <img src="img/clew.svg" alt="Клубок." class="about__image about__image-yarn" width="35" height="34">
             <h2 class="about__description">
               Связано вручную с любовью и умилением
             </h2>
           </div>
           <div class="about__wrapper about__wrapper-manufacture">
-            <img src="img/manufacturer.svg" alt="Ракета." class="about__image about__image-support">
+            <img src="img/manufacturer.svg" alt="Ракета." class="about__image about__image-support" width="55" height="23">
             <h2 class="about__description">
               Поддержка отечественного производителя
             </h2>
           </div>
           <div class="about__wrapper about__wrapper-present">
-            <img src="img/present.svg" alt="Подарок." class="about__image about__image-gift">
+            <img src="img/present.svg" alt="Подарок." class="about__image about__image-gift" width="33" height="32">
             <h2 class="about__description">
               Поставляется в подарочной упаковке
             </h2>
@@ -204,7 +208,7 @@
             srcset="img/reviews-image-desktop.jpg 1x, img/reviews-image-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)"
             srcset="img/reviews-image-tablet.jpg 1x, img/reviews-image-tablet@2x.jpg 2x">
-          <img src="img/reviews-image-tablet.jpg" alt="Reviews.">
+          <img src="img/reviews-image-tablet.jpg" alt="Reviews." width="350" height="457">
         </picture>
         <div class="slider__header">
           <h2 class="slider__title-review">Отзывы</h2>
@@ -224,48 +228,56 @@
             </p>
           </div>
           <div class="slider__arrows">
-            <button class="arrows__left-arrow arrows">
+            <button class="slider__arrows-left arrows">
               <svg>
                 <use xlink:href="img/sprite.svg#left-arrow"></use>
               </svg>
             </button>
-            <button class="arrows__right-arrow arrows__right-arrow-active arrows">
+            <button class="slider__arrows-right arrows">
               <svg class="icon">
                 <use xlink:href="img/sprite.svg#right-arrow"></use>
               </svg>
             </button>
           </div>
         </div>
-        <button class="slider__button button">НАПИСАТЬ</button>
+        <a href="#" class="slider__button button">НАПИСАТЬ</a>
       </section>
       <section class="contacts">
         <div class="contacts__header">
           <h2 class="contacts__header-title">
             Контакты
           </h2>
-          <img class="contacts__header-image" src="img/contacts-flag.svg" alt="contacts-flag">
+          <img class="contacts__header-image" src="img/contacts-flag.svg" alt="contacts-flag" width="47" height="81">
         </div>
-        <dl class="contacts__items">
-          <div class="contacts__item-with-dots">
+        <div class="contacts__items">
+          <dl class="contacts__item-with-dots">
             <dt class="contacts__title">e-mail:</dt>
             <dd class="contacts__value contacts__value-email"><span>info@mimimishkashop.ru</span></dd>
-          </div>
-          <div class="contacts__item-with-dots">
+          </dl>
+          <dl class="contacts__item-with-dots">
             <dt class="contacts__title">адрес:</dt>
-            <div class="contacts__box">
-              <dd class="contacts__value">г. Санкт-Петербург</dd>
-              <dd class="contacts__value">ул. Большая Конюшенная</dd>
-              <dd class="contacts__value">д. 19/8, офис 101</dd>
-            </div>
-          </div>
-        </dl>
+            <dd class="contacts__box">
+              <span class="contacts__value">г. Санкт-Петербург</span>
+              <span class="contacts__value">ул. Большая Конюшенная</span>
+              <span class="contacts__value">д. 19/8, офис 101</span>
+            </dd>
+          </dl>
+        </div>
         <div class="contacts__map-container">
           <iframe class="contacts__map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
             allowfullscreen title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург">
           </iframe>
+          <picture class="contacts__map-container">
+            <source class="contacts__map contacts__map-picture" media="(min-width: 1150px)"
+              srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
+            <source class="contacts__map contacts__map-picture" media="(min-width: 768px)"
+              srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
+            <img class="contacts__map contacts__map-picture" src="img/map-mobile.jpg"
+              srcset="img/map-mobile@2x.jpg 2x" alt="Main-image.">
+          </picture>
         </div>
-        <button class="contacts__button button">НАПИШИТЕ НАМ</button>
+        <a href="#" class="contacts__button button">НАПИШИТЕ НАМ</a>
       </section>
     </main>
     <footer class="footer">
@@ -286,7 +298,7 @@
           <li class="footer__social-icons-wrapper">
             <a class="social-icons-svg" href="https://www.youtube.com/">
               <svg>
-                <use fill="#63D1BB" xlink:href="img/sprite.svg#youtube"></use>
+                <use xlink:href="img/sprite.svg#youtube"></use>
               </svg>
             </a>
           </li>
@@ -300,7 +312,7 @@
         </ul>
       </div>
       <div class="footer__develop">
-        <h2 class="footer__develop-title">Разработано</h2>
+        <a href="#" class="footer__develop-title">Разработано</a>
         <svg class="footer__develop-image">
           <use xlink:href="img/sprite.svg#htmlacademy-footer"></use>
         </svg>

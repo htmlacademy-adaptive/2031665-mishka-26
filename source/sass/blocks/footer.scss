@@ -1,90 +1,107 @@
-.footer{
-    margin-top: 37px;
-    padding-top: 10px;
-    padding-bottom: 31.85px;
-    background: #F1F1F1;
-    &__social{
-        margin-bottom: 38px;
-        &-icons{
-            list-style-type: none;
-            padding: 0;
-            display: flex;
-            margin-left: 92px;
-            &-wrapper{
-                margin-right: 32px;
-            }
-            & svg{
-                width: 27px;
-                height: 19px;
-            }
-            & svg:hover{
-                fill: #46C1AE;
-            }
-            & svg:active{
-                opacity: .3;
-            }
-        }
-    }
-    &__develop{
-        display: flex;
-        justify-content: center;
-        &-title{
-            font-weight: 700;
-            font-size: 19px;
-            line-height: 18px;
-            margin-right: 27px;
-        }
-        &-image{
-            margin-top: 9px;
-            width: 26.9px;
-            height: 34.1px;
-            fill: #63D1BB;
-        }
-        &:hover .footer__develop-image{
-            fill: #46C1AE;
-        }
-        &:active .footer__develop-image{
-            opacity: 0.3;
-        }
-    }
-    &__logo{
-        display: none;
-        width: 102px; 
-        height: 34px;
-    }
+.footer {
+  margin-top: 19px;
+  padding-bottom: 31.85px;
+  background: #f1f1f1;
+}
+
+.footer__social {
+  margin-bottom: 38px;
+}
+
+.footer__social-icons {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  margin-left: 92px;
+  padding-top: 25px;
+}
+
+.footer__social-icons-wrapper {
+  margin-right: 32px;
+}
+
+.footer__social-icons-wrapper svg {
+  width: 27px;
+  height: 19px;
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.footer__develop {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__develop-title {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 18px;
+  margin-right: 27px;
+  color: #000000;
+  margin-top: 15px;
+  text-decoration: none;
+}
+
+.footer__develop-image {
+  margin-top: 9px;
+  width: 26.9px;
+  height: 34.1px;
+  fill: #63d1bb;
+}
+
+.footer__develop:hover svg {
+  fill: #46c1ae;
+}
+
+.footer__develop:active svg {
+  opacity: 0.3;
+}
+
+.footer__logo {
+  display: none;
+  width: 102px;
+  height: 34px;
 }
 
 @media (min-width: 768px) {
-    .footer{
-        display: flex;
-        justify-content: space-between;
-        padding: 43px 50px 0px;
-        cursor: pointer;
-        &__logo{
-            display: block;
-            width: 101.74px;
-            height: 34px;
-            margin-top: 8px;
-            &:hover{
-                fill: #46C1AE;
-            }
-            &:active{
-                opacity: .3;
-            }
-        }
-        &__social{
-            &-icons{
-                margin-left: 28px;
-            }
-        }
-        &-form{
-            margin-top: 30px;
-        }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 43px 50px 0;
+    cursor: pointer;
+    margin-top: 17px;
+  }
+
+  .footer__logo {
+    display: block;
+    width: 101.74px;
+    height: 34px;
+    margin-top: 8px;
+
+    &:hover {
+      fill: #46c1ae;
     }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .footer__social-icons {
+    margin-left: 28px;
+    margin-top: 0;
+    padding-top: 15px;
+  }
 }
 
 @media (min-width: 1150px) {
-    .footer{
-        margin-top: 25px;
-    }
+  .footer {
+    margin-top: 0;
+  }
 }

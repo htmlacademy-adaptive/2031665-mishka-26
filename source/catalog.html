@@ -5,13 +5,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
-  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/152.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+  <link rel="preload" href="fonts/OpenSans-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/OpenSans-Regular.woff" type="font/woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff" type="font/woff" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body class="page__body">
+<body>
   <div class="container">
     <header class="main-header">
       <div class="main-header__container">
@@ -51,18 +55,18 @@
             </ul>
             <ul class="main-nav__list user-list">
               <li class="main-nav__list-item user-list__item main-nav__list-item-invisible">
+                <svg class="main-nav__icon main-nav__icon-search">
+                  <use xlink:href="img/sprite.svg#search"></use>
+                </svg>
                 <a class="main-nav__list-item-search" href="#">
-                  <svg class="main-nav__icon main-nav__icon-search">
-                    <use xlink:href="img/sprite.svg#search"></use>
-                  </svg>
                   Поиск по сайту
                 </a>
               </li>
               <li class="main-nav__list-item user-list__item main-nav__list-item-visible">
+                <svg class="main-nav__icon">
+                  <use xlink:href="img/sprite.svg#basket"></use>
+                </svg>
                 <a href="#">
-                  <svg class="main-nav__icon">
-                    <use xlink:href="img/sprite.svg#basket"></use>
-                  </svg>
                   Корзина: пока пуста
                 </a>
               </li>
@@ -82,58 +86,65 @@
         <h2 class="visually-hidden">Товары для дома</h2>
         <ul class="catalog-products__item-list">
           <li class="catalog-products__item">
-            <picture class="catalog-products__image">
-              <source media="(min-width: 1150px)" srcset="img/rabbit-desktop.jpg 1x, img/rabbit-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/rabbit-tablet.jpg 1x, img/rabbit-tablet@2x.jpg 2x">
-              <img src="img/rabbit.jpg" srcset="img/rabbit@2x.jpg 2x" alt="Rabbit.">
-            </picture>
+            <a href="#" class="catalog-products__image">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/rabbit-desktop.jpg 1x, img/rabbit-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/rabbit-tablet.jpg 1x, img/rabbit-tablet@2x.jpg 2x">
+                <img src="img/rabbit.jpg" srcset="img/rabbit@2x.jpg 2x" alt="Rabbit.">
+              </picture>
+            </a>
             <div class="catalog-products__wrapper">
-              <h2 class="catalog-products__title">Зайчик-попрыгайчик</h2>
+              <a href="#" class="catalog-products__title">Зайчик-попрыгайчик</a>
               <p class="catalog-products__subtitle">Рост 30 см, вес 200 г</p>
             </div>
             <div class="catalog-products__price-container">
               <p class="catalog-products__price">1 200 руб.</p>
               <a href="#" class="catalog-products__basket">
-                <svg class="main-nav__icon">
+                <svg class="catalog-products__icon">
                   <use xlink:href="img/sprite.svg#basket"></use>
                 </svg>
               </a>
             </div>
           </li>
           <li class="catalog-products__item">
-            <picture class="catalog-products__image">
-              <source media="(min-width: 1150px)" srcset="img/basket-desktop.jpg 1x, img/basket-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/basket-tablet.jpg 1x, img/basket-tablet@2x.jpg 2x">
-              <img src="img/basket.jpg" srcset="img/basket@2x.jpg 2x" alt="Basket.">
-            </picture>
+            <a href="#" class="catalog-products__image">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/basket-desktop.jpg 1x, img/basket-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/basket-tablet.jpg 1x, img/basket-tablet@2x.jpg 2x">
+                <img src="img/basket.jpg" srcset="img/basket@2x.jpg 2x" alt="Basket.">
+              </picture>
+            </a>
             <div class="catalog-products__wrapper">
-              <h2 class="catalog-products__title">Корзинка для белья</h2>
+              <a href="#" class="catalog-products__title">Корзинка для белья</a>
               <p class="catalog-products__subtitle">Диаметр 15 см, высота 10 см</p>
             </div>
             <div class="catalog-products__price-container">
               <p class="catalog-products__price">690 руб.</p>
               <a href="#" class="catalog-products__basket">
-                <svg class="main-nav__icon">
+                <svg class="catalog-products__icon">
                   <use xlink:href="img/sprite.svg#basket"></use>
                 </svg>
               </a>
             </div>
           </li>
           <li class="catalog-products__item">
-            <picture class="catalog-products__image">
-              <source media="(min-width: 1150px)"
-                srcset="img/toy-basket-desktop.jpg 1x, img/toy-basket-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/toy-basket-tablet.jpg 1x, img/toy-basket-tablet@2x.jpg 2x">
-              <img src="img/toy-basket.jpg" srcset="img/toy-basket-mobile@2x.jpg 2x" alt="Toy-basket.">
-            </picture>
+            <a href="#" class="catalog-products__image">
+              <picture>
+                <source media="(min-width: 1150px)"
+                  srcset="img/toy-basket-desktop.jpg 1x, img/toy-basket-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/toy-basket-tablet.jpg 1x, img/toy-basket-tablet@2x.jpg 2x">
+                <img src="img/toy-basket.jpg" srcset="img/toy-basket-mobile@2x.jpg 2x" alt="Toy-basket.">
+              </picture>
+            </a>
             <div class="catalog-products__wrapper catalog-products__wrapper-last">
-              <h2 class="catalog-products__title">Большая корзинка для игрушек</h2>
+              <a href="#" class="catalog-products__title">Большая корзинка для игрушек</a>
               <p class="catalog-products__subtitle">Диаметр 30 см, высота 30 см</p>
             </div>
             <div class="catalog-products__price-container">
               <p class="catalog-products__price">1 500 руб.</p>
               <a href="#" class="catalog-products__basket">
-                <svg class="main-nav__icon">
+                <svg class="catalog-products__icon">
                   <use xlink:href="img/sprite.svg#basket"></use>
                 </svg>
               </a>
@@ -149,11 +160,13 @@
         </div>
         <div class="production__wrapper">
           <img src="img/video-mobile.png" alt="Видео создания корзинки." class="production__video">
-          <img src="img/play.svg" alt="Значок загрузки видео" class="production__video-play">
+          <button type="submit" class="production__video-play">
+            <img src="img/play.svg" alt="Значок загрузки видео" width="100" height="77">
+          </button>
         </div>
         <p class="production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
           как появляются наши товары.</p>
-        <button class="production__button button">Сделать заказ</button>
+        <a href="#" class="production__button button">Сделать заказ</a>
       </section>
     </main>
     <footer class="footer">
@@ -188,7 +201,7 @@
         </ul>
       </div>
       <div class="footer__develop">
-        <h2 class="footer__develop-title">Разработано</h2>
+        <a href="index.html" class="footer__develop-title">Разработано</a>
         <svg class="footer__develop-image">
           <use xlink:href="img/sprite.svg#htmlacademy-footer"></use>
         </svg>
@@ -197,5 +210,4 @@
   </div>
   <script src="js/script.js"></script>
 </body>
-
 </html>
